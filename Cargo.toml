@@ -1,0 +1,22 @@
+[package]
+name = "ping-pong-mpsc"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "pingpong-server"
+path = "src/server.rs"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+tokio = { version = "1.0", features = ["rt-multi-thread", "macros"] }
+prost = "0.11"
+tonic = "0.9"
+tokio-stream = "0.1"
+
+
+
+
+[build-dependencies]
+tonic-build = "0.9"

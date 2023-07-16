@@ -3,7 +3,7 @@ syntax = "proto3";
 package pingpong.streaming;
 
 // Interface exported by the server.
-service PingPong {
+service PingPonger {
   // A Bidirectional streaming RPC.
   rpc PingPong(stream Ping) returns (stream Pong) {}
 }
@@ -13,5 +13,5 @@ message Ping {
 }
 
 message Pong {
-  uint32 message = 2;
+  uint32 pong = 2;
 }
