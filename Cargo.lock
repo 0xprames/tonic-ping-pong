@@ -537,17 +537,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184"
 
 [[package]]
-name = "ping-pong-mpsc"
-version = "0.1.0"
-dependencies = [
- "prost",
- "tokio",
- "tokio-stream",
- "tonic",
- "tonic-build",
-]
-
-[[package]]
 name = "ppv-lite86"
 version = "0.2.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -899,6 +888,17 @@ dependencies = [
  "prost-build",
  "quote",
  "syn 1.0.109",
+]
+
+[[package]]
+name = "tonic-ping-pong"
+version = "0.1.0"
+dependencies = [
+ "prost",
+ "tokio",
+ "tokio-stream",
+ "tonic",
+ "tonic-build",
 ]
 
 [[package]]
